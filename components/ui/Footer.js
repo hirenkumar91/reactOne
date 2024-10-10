@@ -15,13 +15,13 @@ export const Footer = () => {
       {/* TASK - React 1 week 2 */}
       {/* Create a new List for the Pages */}
       {/* We need to use the <Link /> component here */}
-      {/* <div className={styles.pages}>
+      {/*<div className={styles.pages}>
         <h3>Pages</h3>
         <ul>
           <li> <Link/> </li>
           ...
         </ul>
-      </div> */}
+      </div>}
       {/* Docs for the Link: https://nextjs.org/docs/pages/api-reference/components/link */}
 
       {/* TASK - React 1 week 1 */}
@@ -29,6 +29,9 @@ export const Footer = () => {
       <div className={styles.footerLinks}>
         <h3>Follow us</h3>
         <ul className={styles.footerList}>
+        <li>
+            <a href='https://linkedin.com'>linkedin</a>
+          </li>
           <li>
             <a href="https://facebook.com">Facebook</a>
           </li>
