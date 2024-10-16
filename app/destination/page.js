@@ -100,6 +100,7 @@ export const Destinations = () => {
             </div>
             <button 
               className="roundButton" 
+              color='black'
               onClick={() => onAddOrRemovePlanet('Pluto', 0)}
             > 
               {isPlanetSelected ? "REMOVE" : "ADD PLANET"}
