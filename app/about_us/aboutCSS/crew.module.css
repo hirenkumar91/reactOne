@@ -1,0 +1,70 @@
+.crewContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sectionIntro {
+    font-size: 1.2rem;
+    text-align: justify;
+    word-spacing: 0.1rem;
+    padding: 3rem 0 2rem 0;
+  }
+  
+  .cardStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;}
+  
+    .crewCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+        width: calc(20rem - 2rem);
+      }
+      
+      .crewCard:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      }
+      
+      .cardImg {
+        margin-right: 1.5rem;
+        width: 10rem;
+        height: 10rem;
+      }
+      
+      .cardImg img {
+        width: 10rem;
+        height: 10rem;
+        object-fit:contain;
+      }
+      
+      .cardDetails {
+        flex: 1;
+      }
+      
+      .cardDetails h3 {
+        margin: 0;
+        font-size: 1.4rem;
+        color: #333;
+      }
+      
+      .cardDetails h5 {
+        margin: 0.5rem 0;
+        font-size: 1.1rem;
+        color: #777;
+      }
+      
+      .cardDetails p {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+        color: #555;
+        text-align: justify;
+      }
+      
