@@ -21,8 +21,6 @@
       "thumbnail": "/destination/image-titan.png"
     }
   ],
-
-  
   "socialMediaLinks": [
     {
       "url": "https://linkedin.com",
@@ -50,7 +48,7 @@
       "icon": "fab fa-google"
     }
   ],
-  "navbarItems":[
+  "navbarItems": [
     {
       "title": "ABOUT US",
       "link": "/about_us"
@@ -64,5 +62,4 @@
       "link": "/nasa_collaboration"
     }
   ]
-  
 }
