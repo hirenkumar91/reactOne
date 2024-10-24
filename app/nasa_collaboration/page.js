@@ -10,15 +10,17 @@ const NASA_URLs = {
   marsRoverPhoto: `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-6-3&api_key=${API_KEY}`,
 };
 
-const RoverPhoto =({date,src,roverName}) => {
-  return(
-    <div>
-      <p>Date {date}</p>
-    <p> {roverName}</p>
-    <img className={styles.nasaPicOfTheDayImg} src={src}/>
+const RoverPhoto = ({ date, src, roverName }) => {
+  return (
+    <div className={styles.roverPhoto}>
+      <img src={src} alt={`Photo taken by ${roverName} on ${date}`} />
+      <div className={styles.roverPhotoDetails}>
+        <h3>{roverName}</h3>
+        <p>{date}</p>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export const NasaCollaboration = () => {
   const [dailyImg, setDailyImg] = useState({});
@@ -69,7 +71,8 @@ export const NasaCollaboration = () => {
         </section>
         <section className="card">
           <h2>Rover Photos</h2>
-          {roverPhoto?.photos?.length ? (
+          <div className={styles.roverPhotoContainer}>
+            {roverPhoto?.photos?.length ? (
             roverPhoto.photos.map((photo, index) => (
               <RoverPhoto
                 key={index}
@@ -81,6 +84,7 @@ export const NasaCollaboration = () => {
           ) : (
             <p>Loading rover photos...</p>
           )}
+          </div>
         </section>
       </main>
     </div>
