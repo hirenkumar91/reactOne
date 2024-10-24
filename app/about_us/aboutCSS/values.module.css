@@ -1,0 +1,29 @@
+.valueContainer{
+    display: flex;
+    flex-direction:row;
+    width: inherit;
+    height: auto;
+    gap: 2rem;
+    justify-items: center;
+    padding-top: 4rem;
+}
+.value{
+    display: flex;
+    flex-direction:column;
+    width: auto;
+    border: 2px solid white ;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.valueTitle{
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.valueDescription{
+    font-size: 0.9rem;
+    text-align:justify;
+    line-height: 1.5rem;
+}
