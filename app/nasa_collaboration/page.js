@@ -3,9 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './page.module.css';
 
-// Read "/app/nasa_collaboration/README.md" for more info about the API_KEY
-// You need a proper API_KEY for the requests to work
-const API_KEY = 'EeSfTBChJ8VYja2AH2LetV3iDAGAaAd7hT14qCfZ';
+const API_KEY = 'UiGqRvQgXG8OPOgXi4iFq9jJdXHP4Cgiuufb0H0d';
 
 const NASA_URLs = {
   astronomyPicOfTheDay: `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`,
@@ -51,8 +49,6 @@ export const NasaCollaboration = () => {
     fetchRoverPhotos();
     fetchDailyImage();
 
-    // TASK - React 1 week 3 
-    // fetch the extra data for NASA_URLs.astronomyPicOfTheDay and save it to the dailyImg state variable
   }, []);
 
   return (
@@ -64,7 +60,7 @@ export const NasaCollaboration = () => {
           {dailyImg.title ? (
             <>
               <h3>{dailyImg.title}</h3>
-              <img src={dailyImg.url} alt={dailyImg.title} />
+              <img src={dailyImg.url} alt={dailyImg.title } className={styles.nasaPicOfTheDayImg}/>
               <p>{dailyImg.explanation}</p>
             </>
           ) : (
