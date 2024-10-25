@@ -1,30 +1,29 @@
 .heading {
-    padding-top: 3rem;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: white;
-  }
-  
-  .logoContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-  }
-  
-  .logoDiv {
-    flex: 0 1 calc(15% - 2rem);
-    max-width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .logoImage {
-    width: 100%;
-    height: auto;
-    max-height: 60px;
-  }
-  
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.logoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.logoDiv {
+  flex: 0 1 calc(15% - 2rem);
+  max-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImage {
+  width: 100%;
+  height: auto;
+  max-height: 60px;
+}
