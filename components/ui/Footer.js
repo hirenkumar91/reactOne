@@ -16,21 +16,21 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 
 export const Footer = () => {
   const path = usePathname().split("?")[0];
+
   return (
     <footer className={path !== "/" ? styles.footer : styles.hidden}>
       <div className={styles.footerDescription}>
         <h3>Galactica</h3>
         <p>
-          Explore the universe and beyond. Your journey to the stars starts
-          here.
+          Explore the universe and beyond. Your journey to the stars starts here.
         </p>
         <p>&copy; 2024 Galactica. All rights reserved.</p>
       </div>
+
       <div className={styles.footerLinks}>
         <h3>Pages</h3>
         <ul className={styles.footerList}>
           <li>
-            {" "}
             <Link href="/">Home</Link>
           </li>
           <li>
@@ -44,7 +44,6 @@ export const Footer = () => {
           </li>
         </ul>
       </div>
-      {/* Docs for the Link: https://nextjs.org/docs/pages/api-reference/components/link */}
 
       <div className={styles.footerLinks}>
         <h3>Follow us</h3>
