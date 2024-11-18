@@ -26,7 +26,6 @@ export const Footer = () => {
         </p>
         <p>&copy; 2024 Galactica. All rights reserved.</p>
       </div>
-
       <div className={styles.footerLinks}>
         <h3>Pages</h3>
         <ul className={styles.footerList}>
@@ -38,6 +37,7 @@ export const Footer = () => {
           </li>
           <li>
             <Link href="/destination">Destination</Link>
+
           </li>
           <li>
             <Link href="/nasa_">NASA Collaboration</Link>
